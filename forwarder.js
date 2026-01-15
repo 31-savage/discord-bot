@@ -5,10 +5,12 @@ const { Client, GatewayIntentBits } = require('discord.js');
 // ============================================
 const CONFIG = {
   // Your Discord bot token (same as in workers.js)
-  DISCORD_BOT_TOKEN: 'MTQ2MTM0ODE5MDg3OTIyMzg0OA.GxK0CW.jjNfKf-mcx5Vaa0S2d7uxb8TlWsZkMKdp5zn_M',
+  // For Railway: Set as environment variable DISCORD_BOT_TOKEN
+  DISCORD_BOT_TOKEN: process.env.DISCORD_BOT_TOKEN || 'MTQ2MTA2NjYzODM2NjQ3NDI5MA.Gkhi_V.bHZtH_c92cUx5l08IicsxPM0DAdkkacQw6WUWw',
   
   // Your Cloudflare Worker URL (after deploying workers.js)
-  WORKER_URL: 'https://steep-river-c995.thetruesammyjay.workers.dev/',
+  // For Railway: Set as environment variable WORKER_URL
+  WORKER_URL: process.env.WORKER_URL || 'https://steep-river-c995.thetruesammyjay.workers.dev/',
 };
 // ============================================
 
